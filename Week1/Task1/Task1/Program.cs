@@ -1,62 +1,80 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Task1
 {
     class Program
     {
-        static void Main(string[] args)
-        {
 
-            int n = int.Parse(Console.ReadLine());
-            int[] array = new int[n];
-            int[] array2 = new int[n];
-            int cnt = 0;
-            int d = 0;
-
-            for (int i = 0; i < n; i++)
-
+            public static bool Isprime(int n)
             {
-                array[i] = Convert.ToInt32(Console.ReadLine());
-
-                for (int k = 2; k < Math.Sqrt(array[i]); k++)
-
+                if (n == 1)
                 {
-                    if (array[i] == 2 || array[i] == 3)
+                    return false;
+                }
+                if (n == 2)
+                {
+                    return true;
+                }
+                for (int i = 2; i <= Math.Sqrt(n); i++)
+                {
+                    if (n % i == 0)
                     {
-                        array2[d] = array[i];
-                        cnt++;
-                        d++;
+                        return false;
+
                     }
+                }
+                return true;
+            }
 
+            static void Main(string[] args)
+        {
+            {
+                int n;
 
-                    else
-                            if (array[i] % k == 0 || array[i] == 1)
+                int cnt = 0;
 
-                    {
-                        break;
-                    }
+                n = int.Parse(Console.ReadLine());
 
+                int[] array = new int[n];
 
-                    else
-                    {
-                        array2[d] = array[i];
-                        d++;
-                        cnt++;
-                    }
+                string s = Console.ReadLine();
 
+                string[] ar = s.Split();
 
-
+                for (int i = 0; i < n; i++)
+                {
+                    array[i] = int.Parse(ar[i]);
                 }
 
 
-            }
-            Console.WriteLine(cnt);
-            for (int j = 0; j < cnt; j++)
+                for (int i = 0; i < array.Length; i++)
+                {
 
-            {
-              
-                Console.Write(array2[j] + " ");
+                    if (Isprime(array[i]))
+                    {
+                        cnt++;
+                    }
+                }
+
+                Console.WriteLine(cnt);
+
+                for (int i = 0; i < array.Length; i++)
+                {
+
+                    if (Isprime(array[i]))
+                    {
+                        Console.Write(array[i] + " ");
+                    }
+                }
+                Console.ReadKey();
 
             }
+
+
         }
     }
 }
