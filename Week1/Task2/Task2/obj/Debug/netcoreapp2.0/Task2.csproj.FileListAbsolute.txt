@@ -1,0 +1,11 @@
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/obj/Debug/netcoreapp2.0/Task2.csprojAssemblyReference.cache
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/obj/Debug/netcoreapp2.0/Task2.csproj.CoreCompileInputs.cache
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/obj/Debug/netcoreapp2.0/Task2.AssemblyInfoInputs.cache
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/obj/Debug/netcoreapp2.0/Task2.AssemblyInfo.cs
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/bin/Debug/netcoreapp2.0/Task2.deps.json
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/bin/Debug/netcoreapp2.0/Task2.runtimeconfig.json
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/bin/Debug/netcoreapp2.0/Task2.runtimeconfig.dev.json
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/bin/Debug/netcoreapp2.0/Task2.dll
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/bin/Debug/netcoreapp2.0/Task2.pdb
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/obj/Debug/netcoreapp2.0/Task2.dll
+/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task2/Task2/obj/Debug/netcoreapp2.0/Task2.pdb
