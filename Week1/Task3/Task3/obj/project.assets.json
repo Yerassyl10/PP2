@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/daniyarbekulyyerassyl/Projects/Task3/Task3/Task3.csproj",
+      "projectUniqueName": "/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task3/Task3/Task3.csproj",
       "projectName": "Task3",
-      "projectPath": "/Users/daniyarbekulyyerassyl/Projects/Task3/Task3/Task3.csproj",
+      "projectPath": "/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task3/Task3/Task3.csproj",
       "packagesPath": "/Users/daniyarbekulyyerassyl/.nuget/packages/",
-      "outputPath": "/Users/daniyarbekulyyerassyl/Projects/Task3/Task3/obj",
+      "outputPath": "/Users/daniyarbekulyyerassyl/Projects/PP2/Week1/Task3/Task3/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -9,21 +9,21 @@ namespace Task1
     class Program
     {
 
-            public static bool Isprime(int n)
+            public static bool Isprime(int n) //created function which identifies prime
             {
                 if (n == 1)
                 {
-                    return false;
+                    return false; // integer "1" is not prime
                 }
                 if (n == 2)
                 {
-                    return true;
+                    return true; // integer "2" is not prime
                 }
                 for (int i = 2; i <= Math.Sqrt(n); i++)
                 {
                     if (n % i == 0)
                     {
-                        return false;
+                        return false; // loop that identifies if integer is prime
 
                     }
                 }
@@ -33,19 +33,19 @@ namespace Task1
             static void Main(string[] args)
         {
             {
-                int n;
+                int n; // created variable that is integer
 
-                int cnt = 0;
+                int cnt = 0; // created variable that counts
 
-                n = int.Parse(Console.ReadLine());
+                n = int.Parse(Console.ReadLine()); // input string and it is converted to integer
 
-                int[] array = new int[n];
+                int[] array = new int[n]; // created array
 
-                string s = Console.ReadLine();
+                string s = Console.ReadLine(); 
 
-                string[] ar = s.Split();
+                string[] ar = s.Split(); // elements of array are splited bt space
 
-                for (int i = 0; i < n; i++)
+                for (int i = 0; i < n; i++) // input elements by using loop into array
                 {
                     array[i] = int.Parse(ar[i]);
                 }
@@ -54,7 +54,7 @@ namespace Task1
                 for (int i = 0; i < array.Length; i++)
                 {
 
-                    if (Isprime(array[i]))
+                    if (Isprime(array[i])) // counter increments if this statement is true
                     {
                         cnt++;
                     }
@@ -62,7 +62,7 @@ namespace Task1
 
                 Console.WriteLine(cnt);
 
-                for (int i = 0; i < array.Length; i++)
+                for (int i = 0; i < array.Length; i++) // this loop outputs elements from the array
                 {
 
                     if (Isprime(array[i]))
