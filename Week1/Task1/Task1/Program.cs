@@ -14,6 +14,7 @@ namespace Task1
                 if (n == 1)
                 {
                     return false; // integer "1" is not prime
+                    
                 }
                 if (n == 2)
                 {
