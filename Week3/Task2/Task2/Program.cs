@@ -165,11 +165,10 @@ namespace Task2
                 }
                 if (consoleKey.Key == ConsoleKey.P)
                 {
-                    string oldname = currentFs.FullName;
+                    string oldpath = currentFs.FullName;
                     string newname = Console.ReadLine();
 
-
-                    File.Move(oldname, newname);
+                    Directory.Move(oldpath, path+"/"+newname);
 
                 }
             }
@@ -182,7 +181,7 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-            string path = "/Users/daniyarbekulyyerassyl/documents";
+            string path = "/Users/daniyarbekulyyerassyl/documents/Books";
             FarManager farManager = new FarManager(path);
             farManager.Start();
         }
