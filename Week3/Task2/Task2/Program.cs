@@ -61,7 +61,7 @@ namespace Task2
                     continue;
                 }
                 Color(fs[i], k);
-                Console.WriteLine(fs[i].Name);
+                Console.WriteLine((k + 1) + ". " + fs[i].Name);
                 k++;
             }
         }
@@ -181,7 +181,7 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-            string path = "/Users/daniyarbekulyyerassyl/documents/Books";
+            string path = "/Users/daniyarbekulyyerassyl/documents/";
             FarManager farManager = new FarManager(path);
             farManager.Start();
         }
