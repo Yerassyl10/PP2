@@ -9,12 +9,19 @@ namespace Task2
         public int id;
         public int yearst;
 
+        static int increament(int year)
+        {
+            return year + 1;
+        }
+
         public Student()
         {
             name = Console.ReadLine();
             id = int.Parse(Console.ReadLine());
             yearst = int.Parse(Console.ReadLine());
+            yearst = increament(yearst);
         }
+
 
         public Student(string name, int id, int yearst)
         {
@@ -25,7 +32,7 @@ namespace Task2
 
         public override string ToString()
         {
-            return yearst + " " + name + " " + id;
+            return name + " " + id + " " + yearst;
         }
     }
 
@@ -42,3 +49,4 @@ namespace Task2
         }
     }
 }
+
