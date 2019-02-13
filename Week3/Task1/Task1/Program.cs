@@ -61,7 +61,7 @@ namespace Task1
                     continue;
                 }
                 Color(fs[i], k);
-                Console.WriteLine(fs[i].Name);
+                Console.WriteLine((k+1)+". "+fs[i].Name);
                 k++;
             }
         }
