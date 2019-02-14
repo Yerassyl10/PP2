@@ -7,32 +7,22 @@ namespace Task2
     {
         public string name;
         public int id;
-        public int yearst;
-
-        static int increament(int year)
-        {
-            return year + 1;
-        }
-
-        public Student()
-        {
-            name = Console.ReadLine();
-            id = int.Parse(Console.ReadLine());
-            yearst = int.Parse(Console.ReadLine());
-            yearst = increament(yearst);
-        }
+        public static int year =0;
 
 
-        public Student(string name, int id, int yearst)
+
+        public Student(string name, int id)
         {
             this.name = name;
             this.id = id;
-            this.yearst = yearst;
+            year++;
         }
 
-        public override string ToString()
+        public void Print()
         {
-            return name + " " + id + " " + yearst;
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Id: " + id);
+
         }
     }
 
@@ -42,9 +32,15 @@ namespace Task2
         static void Main(string[] args)
         {
 
-        Student st = new Student();
-      
-        Console.WriteLine(st);
+            Student student1 = new Student("Yerassyl", 10);
+            student1.Print();
+            Console.WriteLine("Year: " + Student.year);
+
+            Console.WriteLine();
+
+            Student student2 = new Student("Nurassyl", 22);
+            student2.Print();
+            Console.WriteLine("Year: " + Student.year);
 
         }
     }
